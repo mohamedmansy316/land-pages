@@ -26,12 +26,16 @@ body {
 }
 
 nav {
-  padding: 0 !important;
+  padding: 50px 0 !important;
   background-color: #fff;
 }
 nav a {
   color: #0F133D !important;
   font-weight: 700 !important;
+}
+nav svg {
+  font-size: 24px;
+  color: #0F133D;
 }
 nav .navbar-nav {
   display: flex !important;
@@ -57,9 +61,6 @@ nav .navbar-collapse {
   text-align: center !important;
 }
 @media screen and (max-width: 300px) {
-  nav {
-    height: 90px !important;
-  }
   nav .nav-item:nth-child(2) {
     margin: 0 8px !important;
   }
@@ -71,22 +72,32 @@ nav .navbar-collapse {
     margin-left: 3px !important;
   }
 }
-@media screen and (max-width: 600px) {
-  nav {
-    height: 102px;
-  }
-  nav .navbar-nav {
-    display: flex !important;
-    flex-direction: row !important;
-  }
+@media screen and (max-width: 383px) {
   nav .navbar-nav a {
     font-size: 8.85px;
   }
-  nav .nav-item:nth-child(2) {
-    margin: 0 15px;
+}
+@media screen and (max-width: 575px) {
+  nav .navbar-nav a {
+    font-size: 10.85px;
   }
-  nav .nav-item:nth-child(3) {
-    margin: 0 17px 0 0;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    padding: 30px 0 !important;
+  }
+  nav .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .navbar-nav a {
+    font-size: 18px;
+    margin: 0;
+  }
+  nav .nav-item:nth-child(1) {
+    margin: 20px 0 0 0;
   }
   nav .navbar-brand img {
     width: 114px;
@@ -94,11 +105,8 @@ nav .navbar-collapse {
   }
 }
 @media screen and (min-width: 600px) {
-  nav {
-    height: 7.375rem !important;
-  }
   nav a {
-    font-size: 1.116rem !important;
+    font-size: 15px !important;
   }
   nav .navbar-nav {
     display: flex !important;
@@ -116,9 +124,6 @@ nav .navbar-collapse {
   }
 }
 @media screen and (min-width: 768px) {
-  nav {
-    height: 7.5rem !important;
-  }
   nav .navbar-brand {
     margin-bottom: 0 !important;
   }
@@ -142,9 +147,6 @@ nav .navbar-collapse {
   }
 }
 @media screen and (min-width: 1920px) {
-  nav {
-    height: 230px !important;
-  }
   nav a {
     font-size: 32px !important;
     color: #0F133D !important;
@@ -262,7 +264,7 @@ nav .navbar-collapse {
   }
   #hero-section img {
     width: 290px !important;
-    margin-top: 3.75rem !important;
+    margin-top: 0rem !important;
   }
   #hero-section p {
     font-size: 1.4rem !important;
@@ -283,16 +285,16 @@ nav .navbar-collapse {
   }
   #hero-section h1 {
     font-size: 60px !important;
-    margin-top: 70px !important;
+    margin-top: 40px !important;
   }
   #hero-section p {
     font-size: 50px !important;
-    margin-top: 64px !important;
+    margin-top: 10px !important;
     margin-bottom: 72px !important;
   }
   #hero-section img {
     width: 339px !important;
-    margin-top: 51px !important;
+    margin-top: 0px !important;
   }
 }
 
@@ -475,6 +477,22 @@ nav .navbar-collapse {
     font-size: 14px !important;
   }
 }
+@media screen and (max-width: 575px) {
+  #engagement-experience .section-content:nth-child(2) img {
+    width: 120px !important;
+  }
+  #engagement-experience .section-content:nth-child(3) img {
+    width: 120px !important;
+  }
+  #engagement-experience .section-content:nth-child(4) img {
+    width: 120px !important;
+  }
+  #engagement-experience p {
+    font-size: 17px;
+    width: 230px;
+    margin: auto;
+  }
+}
 @media screen and (max-width: 600px) {
   #engagement-experience h2 {
     font-size: 30px;
@@ -512,10 +530,10 @@ nav .navbar-collapse {
     font-weight: 800 !important;
   }
   #engagement-experience p {
-    font-size: 1.125rem !important;
+    font-size: 29.83px !important;
   }
   #engagement-experience img {
-    width: 5.938rem !important;
+    width: 9rem !important;
   }
   #engagement-experience .row {
     justify-content: space-evenly !important;
@@ -531,6 +549,15 @@ nav .navbar-collapse {
   #engagement-experience .row {
     justify-content: space-evenly !important;
   }
+  #engagement-experience .row div:nth-child(2) img {
+    width: 199px !important;
+  }
+  #engagement-experience .row div:nth-child(3) img {
+    width: 199px !important;
+  }
+  #engagement-experience .row div:nth-child(4) img {
+    width: 239.7285px !important;
+  }
   #engagement-experience h2 {
     font-size: 82px !important;
     font-weight: 800 !important;
@@ -538,7 +565,7 @@ nav .navbar-collapse {
     text-align: center !important;
   }
   #engagement-experience p {
-    font-size: 35px !important;
+    font-size: 49.83px !important;
     font-weight: 700 !important;
   }
   #engagement-experience img {
@@ -647,7 +674,6 @@ nav .navbar-collapse {
 }
 @media screen and (min-width: 1920px) {
   #our-benefits h2 {
-    font-size: 106px !important;
     margin-top: 6.25rem !important;
     margin-bottom: 0 !important;
   }
@@ -721,6 +747,21 @@ nav .navbar-collapse {
     font-size: 18px !important;
   }
 }
+@media screen and (max-width: 575px) {
+  #contact-us p {
+    font-size: 22.96px !important;
+  }
+  #contact-us p:nth-child(1) {
+    margin-top: 47.0516px !important;
+  }
+  #contact-us p:nth-child(2) {
+    font-size: 20.73px !important;
+  }
+  #contact-us p:nth-child(3) {
+    font-size: 18px !important;
+    margin-bottom: 60.0516px !important;
+  }
+}
 @media screen and (max-width: 600px) {
   #contact-us {
     padding: 0 37px;
@@ -744,7 +785,7 @@ nav .navbar-collapse {
     padding: 0 2.313rem !important;
   }
   #contact-us p {
-    font-size: 2.813rem !important;
+    font-size: 2.1rem !important;
   }
   #contact-us p:nth-child(1) {
     margin-top: 140.0516px !important;
@@ -758,19 +799,23 @@ nav .navbar-collapse {
 }
 @media screen and (min-width: 768px) {
   #contact-us {
-    margin-bottom: 40px !important;
+    margin-bottom: 120px !important;
   }
-  #contact-us p {
-    font-size: 3.5rem !important;
-    width: 80% !important;
-    display: inline-block !important;
+  #contact-us p:first-child {
+    font-size: 45px !important;
+    margin-top: 170px !important;
+    line-height: 1 !important;
+  }
+  #contact-us p:nth-child(2) {
+    font-size: 45px !important;
+  }
+  #contact-us p:nth-child(3) {
+    font-size: 89.32px !important;
   }
 }
 @media screen and (min-width: 1920px) {
   #contact-us p:first-child {
     font-size: 107px !important;
-    margin-top: 370px !important;
-    line-height: 1 !important;
   }
   #contact-us p:nth-child(2) {
     font-size: 97px !important;
@@ -825,7 +870,7 @@ nav .navbar-collapse {
     width: 25.8013px !important;
   }
   #footer p {
-    font-size: 8.35px !important;
+    font-size: 9.35px !important;
   }
   #footer a {
     font-size: 13px !important;
@@ -834,21 +879,26 @@ nav .navbar-collapse {
     margin: 0px 8px !important;
   }
 }
+@media screen and (min-width: 400px) {
+  #footer p {
+    font-size: 13.35px !important;
+  }
+}
 @media screen and (max-width: 600px) {
   #footer {
-    padding: 0 50px;
+    padding: 0 5px;
   }
   #footer img {
-    width: 25.8013px;
+    width: 37px !important;
   }
   #footer p {
-    font-size: 8.35px;
+    font-size: 15.35px !important;
   }
   #footer a {
     padding: 10px;
-    font-size: 15px;
-    width: 26.9176px;
-    height: 26.9176px;
+    font-size: 17px;
+    width: 30.9176px;
+    height: 30.9176px;
     margin: 0px 11px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
